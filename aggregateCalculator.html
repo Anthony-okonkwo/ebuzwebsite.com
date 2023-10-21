@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Jamb aggregate Calculator</title>
+        <link rel="stylesheet" href="aggregate.css">
+        	<html lang="en">
+        	    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+<body>
+	    <style>
+    body{
+    color: #FFF;  
+    background: linear-gradient(#550000, #000023);
+    background-color:#233;
+    color:#ff7700;
+    height:655px;
+}
+colr{
+    color:#;
+}
+.head{
+    background-color:#00ff00;
+    width:105%;
+    margin-top:-2.7%;
+    margin-left:-3.6%;
+    height:45px;
+    border: solid 2px #000000;
+}
+h2{
+    margin-top:2%;
+    color:;
+}
+.jmb{
+    margin-top:10%;
+}
+#jamb{
+    background-color:#00ff00;
+    height:20px;
+    width:60%;
+}
+#optOne{
+    background-color:#00ff00;
+}
+#optTwo{
+    background-color:#00ff00;
+}
+#optThree{
+    background-color:#00ff00;
+}
+#optFour{
+    background-color:#00ff00;
+}
+button{
+    background-color:#00ff00;
+    color:#ff0000;
+    position:absolute ;
+    left:30%;
+    height:6%;
+    width:33%;
+    margin-top:10%;
+    font-size:20px;
+    border: solid 2px #0000ff;
+    
+}
+.answer{
+    position:fixed ;
+    top:50%;
+    left:15%;
+    color:#fff;
+    animation:hideanimation 5s forwards;
+}
+@keyframe hideanimation{
+    0%{opacity:1;}
+  100%{opacity:0;}
+}
+.a{ 
+	position:fixed;
+    top:60%;
+	height:40px;
+	width:48%;
+	padding-left:20px;
+	padding-bottom:15px;
+	background-color:#00ff00;
+	border-radius:30% 5% 30% 5%;
+	border: solid 2px #0000ff;
+	}
+
+    </style>
+   <div class="head">        
+       <h2 align="center">JAMB Aggregate Calculator</h2>
+   </div>    
+     <form name="form">
+   <div class="jmb">
+       <label>JAMB Score: </label>
+    <input id="jamb" type="number" placeholder="Input your jamb score."><br /><br />
+    </div>
+    
+       <label>Olevel 1 :</label>
+       <select id="optOne">
+           <option value=90 >A1</option>
+           <option value=80 >B2</option>
+           <option value=70 >B3</option>
+           <option value=60 >C4</option>
+           <option value=55 >C5</option>
+           <option value=50 >C6</option>
+           <option value=0 >D7</option>
+           <option value=0 >E8</option>
+           <option value=0  >F9</option>
+       </select><br />
+       <label>Olevel 2 : </label>  
+       <select id="optTwo">
+           <option value=90 >A1</option>
+           <option value=80 >B2</option>
+           <option value=70 >B3</option>
+           <option value=60 >C4</option>
+           <option value=55 >C5</option>
+           <option value=50 >C6</option>
+           <option value=0 >D7</option>
+           <option value=0 >E8</option>
+           <option value=0  >F9</option>
+       </select><br />
+       <label>Olevel 3 : </label>  
+       <select id="optThree">
+           <option value=90 >A1</option>
+           <option value=80 >B2</option>
+           <option value=70 >B3</option>
+           <option value=60 >C4</option>
+           <option value=55 >C5</option>
+           <option value=50 >C6</option>
+           <option value=0 >D7</option>
+           <option value=0 >E8</option>
+           <option value=0  >F9</option>
+       </select><br />
+       <label>Olevel 4 : </label>  
+       <select id="optFour">
+           <option value=90 >A1</option>
+           <option value=80 >B2</option>
+           <option value=70 >B3</option>
+           <option value=60 >C4</option>
+           <option value=55 >C5</option>
+           <option value=50 >C6</option>
+           <option value=0 >D7</option>
+           <option value=0 >E8</option>
+           <option value=0  >F9</option>
+       </select><br />
+       <label>One sitting?</label>
+       
+    <label for="y" >Yes</label>   
+    <input type="radio" id="y" name="option" value="10" checked> 
+     
+     <label for="n">No</label>      
+    <input type="radio" id="n" name="option" value="0"> <br />
+      
+ </form>
+      <button onclick="ttl()">Submit</button>
+   <div class="answer"><h2 id="ans" align="left"></h2></div>  <br/>
+  <div class="a">
+    <a href="index.html"><h3>Back to homepage</h3></a>
+  </div>
+    </body>
+    <script>
+    
+      var waec;
+      var radioInput1 = document.getElementById("y");
+  
+      var radioInput2 = document.getElementById("n");
+      var times;
+
+
+function ttl() {
+  var resOne = document.getElementById("optOne");
+  var firstRes = parseInt(resOne.value);
+  var resTwo = document.getElementById("optTwo");
+  var secondRes = parseInt(resTwo.value);
+  var resThree = document.getElementById("optThree");
+  var thirdRes = parseInt(resThree.value);
+  var resFour = document.getElementById("optFour");
+  var fourthRes = parseInt(resFour.value);
+  waec = firstRes + secondRes + thirdRes + fourthRes;
+  
+  var jamb = document.getElementById("jamb").value;
+  if(jamb>400){
+      alert("Jamb score must not be greater than 400, no dey lie 😅")
+  }
+  else{
+      
+  }
+  var radioInput1 = document.getElementById("y");
+  var radioInput2 = document.getElementById("n");
+  var times = parseInt(10);
+
+  if (radioInput2.checked) {
+    times = parseInt(0);
+  }
+  var total = (jamb * 0.7) + ((waec + times) * 0.3);
+  var ttl = total.toFixed(1);
+
+  document.getElementById("ans").innerHTML = "Your aggregate is " + ttl + " 🙂";
+}
+
+
+    </script>
+
+</html>
