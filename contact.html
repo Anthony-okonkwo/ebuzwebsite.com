@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html>
+    <body>
         <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +14,11 @@
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Contact form to email.css">
     
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     
-    <title>Ebuz Animations homepage</title> 
-    
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("oj8zv_b8kiV_VOy3q");
-   })();
-</script>
+    <title>About Us</title> 
 </head>
 <body>
     <nav class="sidebar close">
@@ -88,7 +79,7 @@
                     </li>
 
                     <li class="nav-link">
-                        <a href="contact.html">
+                        <a href="contact.html"">
                             <i class='bx bx-building-house icon' ></i>
                             <span class="text nav-text">About Us</span>
                         </a>
@@ -98,7 +89,7 @@
             </div>
 
             <div class="bottom-content">
-    <!--    <li class="#">
+               <!-- <li class="">
                     <a href="#">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Logout</span>
@@ -127,45 +118,24 @@
 <div class="home">
  <div class="homet">
  	        <div id="img">
-          <img src = "Ebuzlogo.png" alt = " error " >
+          <img src = "Ebuzlogo.png" alt = " error " 
+   height="30px" width="250px">
         </div>
 
     <!-- welcome panel -->
-   <h1  align="center"  style=" font-size:22px;" id="demo"><h1 id="namex"></h1></h1>
-   
+   <h1 align="center" id="demo"><h1 id="namex"></h1></h1>
+   <br />
             
         
             <!--Content of the page-->
-        <h1></h1><br/>
-      <p><b class="p"></b><b>Ebuz Animations</b> is a fantastic website that specializes in creating eye-catching 3D character and product animations for advertisements.</p><br/>
-      
-       <img src="Sample4.jpg" alt="3d" class="indeximg"><br/><br/>
-             
-      <p><b class="p"></b>They also offer services like designing custom-made websites and even developing online games. It's a one-stop-shop for all things 3D and animation.</p><br/>
-        <img src="Goldcar.png" alt="3d" class="indeximg"><br/><br/>
-
-        <p><b class="p">Ebuz Animations</b> is your go-to destination for mind-blowing 3D character and product animations. They've got you covered when it comes to creating stunning visuals for advertisements, websites, and even online games. Their expertise in 3D modeling will surely bring your ideas to life in the most captivating way possible. Get ready to be amazed by their talent and creativity! 🎬✨</p><br/><br/>
-        
-         <img src="Sample3.jpg" alt="3d" class="indeximg"><br/><br/>
-       <p><b class="p"></b>Click the button below to make your order, thanks for patronizing 🤗.</p>
-       <div class="order" align="center" ><b><a href="https://wa.me/+2349169506295?text=Good%20day,%20i'd%20like%20to%20make%20an%20order." style="color:white; text-decoration:none;">Make an Order</a></b></div><br/>
-<section> 
-    <p><b class="p"></b>Your order will be sent to you via email when completed, pls input your Name and Email below. </p><br/>
- <form id="form">
-  <label for="name">Name:</label>
-  <input  class="form" type="text" id="name" name="name" autocomplete="given-name" placeholder="Input your name" required><br/><br/>
-  <label for="email">Email:</label>
-  <input class="form" type="email" id="email" name="email" autocomplete="given-name" placeholder="email" required><br/><br/>
-
-  <button type="submit" class="button" onclick="sendMail()" >Submit</button>
- </form><br/>
-       <p>You can also check out other features of the site, like our Jamb aggregate calculator, games and other stuff 😊.</p> 
-  <br/><br/><br/><br/><br/>
- </section>
+<br/>
+        <h2 align="center">Meet the CEO</h2><br/>
+        <p>Hey there 👋, i'm Anthony, creator of this website. It's very nice for you to visit today 🙂.</p>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
  <footer> 
    
-    <div style="text-align: center;">Contact us through the following links.</div><br />
-     <nav style="text-align: center; width:100%;" >
+     Contact us through the following links.<br />
+     <nav>
   <a href="https://www.facebook.com/profile.php?id=100082984046129" class="nav">Google</a>
      
   <a href="https://www.facebook.com/profile.php?id=100082984046129" class="nav">Facebook</a>
@@ -180,7 +150,7 @@
 </div>
 
 
-<script>
+    <script>
 //For dashboard//
 const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
@@ -247,27 +217,8 @@ const body = document.querySelector('body'),
    document.getElementById("namex").innerHTML = "User";}    
                       }
 //callUser();//
-</script>
-<script>
-  function sendMail(){        
-        var params = {
-          name: document.getElementById("name").value,
-        email: document.getElementById("email").value,};
-        
-    const serviceID= "service_llj3vtc";
-    const templateID="template_8eke0rl";
-    emailjs.send(serviceID,templateID,params).then(res=>{
-        document.getElementById("name").value="";
-        document.getElementById("email").value="";
-        console.log(res);
-      alert("Your Name and Email has been sent succesfully.")      
-    })
-    .catch(err=>console.log(err));
-        }
-    
 
-</script>
-   
+    </script>
 
 </body>
 </html>

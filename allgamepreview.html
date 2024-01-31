@@ -1,22 +1,32 @@
 
 <!DOCTYPE html>
 <html>
-    <body>
         <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!----======== CSS ======== -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Contact form to email.css">
+        
+        <!----===== Boxicons CSS ===== -->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        
+        <title>Ebuz Animations homepage</title> 
+        
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("oj8zv_b8kiV_VOy3q");
+       })();
+    </script>
+    </head>
     
-    <!----======== CSS ======== -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!----===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-    <title>Ebuz Animations homepage</title> 
-</head>
 <body>
 <style> 
 button{
@@ -31,109 +41,108 @@ button{
 }	
 
 </style>
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
+<nav class="sidebar close">
+    <header>
+        <div class="image-text">
 
-                <div class="text logo-text">
-                    <span class="name"></span>
-                    <span class="profession">Ebuz Animations</span>
-                </div>
+            <div class="text logo-text">
+                <span class="name"></span>
+                <span class="profession">Ebuz Animations</span>
             </div>
+        </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
+        <i class='bx bx-chevron-right toggle'></i>
+    </header>
 
-        <div class="menu-bar">
-            <div class="menu">
+    <div class="menu-bar">
+        <div class="menu">
 
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
-                </li>
+            <li class="search-box">
+                <i class='bx bx-search icon'></i>
+                <input type="text" placeholder="Search...">
+            </li>
 
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="index.html">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text">Homepage</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Revenue</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Notifications</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="aggregateCalculator.html">
-                            <i class='bx bx-calculator icon' ></i>
-                            <span class="text nav-text">Aggregate Calculator</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="allgamepreview.html">
-                            <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">Play Games</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-phone icon' ></i>
-                            <span class="text nav-text">Contact</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
-                        <span class="text nav-text">Logout</span>
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="index.html">
+                        <i class='bx bx-home-alt icon' ></i>
+                        <span class="text nav-text">Homepage</span>
                     </a>
                 </li>
 
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                        <span class="text nav-text">Revenue</span>
+                    </a>
                 </li>
-                
-            </div>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-bell icon'></i>
+                        <span class="text nav-text">Notifications</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="aggregateCalculator.html">
+                        <i class='bx bx-calculator icon' ></i>
+                        <span class="text nav-text">Aggregate Calculator</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="allgamepreview.html">
+                        <i class='bx bx-game icon' ></i>
+                        <span class="text nav-text">Play Games</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="contact.html">
+                        <i class='bx bx-building-house icon' ></i>
+                        <span class="text nav-text">About Us</span>
+                    </a>
+                </li>
+
+            </ul>
         </div>
 
-    </nav>
-    
+        <div class="bottom-content">
+<!--    <li class="#">
+                <a href="#">
+                    <i class='bx bx-log-out icon' ></i>
+                    <span class="text nav-text">Logout</span>
+                </a>
+            </li>-->
+
+            <li class="mode">
+                <div class="sun-moon">
+                    <i class='bx bx-moon icon moon'></i>
+                    <i class='bx bx-sun icon sun'></i>
+                </div>
+                <span class="mode-text text">Dark mode</span>
+
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+            
+        </div>
+    </div>
+
+</nav>
+
 
 
 <div class="home">
- <div class="homet">
- 	        <div id="img">
-          <img src = "Ebuzlogo.png" alt = " error " 
-   height="30px" width="250px">
-        </div>
+<div class="homet">
+         <div id="img">
+      <img src = "Ebuzlogo.png" alt = " error " >
+    </div>
 
-    <!-- welcome panel -->
-   <h1 id="demo"><h1 id="namex"></h1></h1>
+<!-- welcome panel -->
+<h1  align="center"  style=" font-size:22px;" id="demo"><h1 id="namex"></h1></h1>
    <br />
             
    <br/>
@@ -158,8 +167,8 @@ Immerse yourself in the tranquil world of <b>Ebuz games</b>. Hope you like it ðŸ
     
  <footer> 
    <br/>
-     Contact us through the following links.<br />
-     <nav>
+   <div style="text-align: center;">Contact us through the following links.</div><br />
+   <nav style="text-align: center; width:100%;" >
   <a href="https://www.facebook.com/profile.php?id=100082984046129" class="nav">Google</a>
      
   <a href="https://www.facebook.com/profile.php?id=100082984046129" class="nav">Facebook</a>
@@ -223,7 +232,7 @@ const body = document.querySelector('body'),
     var time = new Date().getHours();
      if (time < 12) {
         return "Good Morning " + name + " " + morn;}
-     else if (time < 18) {
+     else if (time < 16) {
           return "Good Afternoon " + name + " " + noon;}
      else {
          return "Good Evening " + name + " " + dawn;}
