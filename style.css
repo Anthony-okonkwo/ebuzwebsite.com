@@ -1,16 +1,30 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size:;
+    font-size:16px;
+    width: 95%;
+    
 }
 .gimg{
+    position: relative;
+    left: 30%;
 	border: solid 3px #0000ff;
 	border-radius:5%;
-	height:360px;
-	width:200px;
+    min-height:360px;
+    max-height: 15%;
+    min-width: 200px ;
+    max-width: 40%;
 	}
+.indeximg{
+	border: solid 2px #00aa00;
+	border-radius:2%;
+	height:100%;
+	width:100%;
+	}
+	
 :root{
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
@@ -32,6 +46,7 @@ body{
     position:absolute;
     background-color: var(--body-color);
     transition: var(--tran-05);
+    width: 100%;
 }
 
 ::selection{
@@ -125,10 +140,10 @@ header .image-text .name {
 }
 
 header .image-text .profession{
-    font-size: 16px;
+    font-size: 18px;
     margin-top: -2px;
     display: block;
-    color:green;
+    color:#00aa00;
 }
 
 .sidebar header .image{
@@ -332,7 +347,27 @@ body.dark .home .text{
 
 }
 .nav{
+    padding: 0 1% 0 1%;
     margin-left:5px;
     color:#00cc00;
-    backgroung color:#red;
+    background-color:#red;
+    }
+.p{
+        margin-left:15px;
+    }
+.order{
+    position:relative;
+    left:25%;
+    background-color:#00aa00;
+    color:#ffffff;
+    height:25%;
+    width:50%;
+    padding:2.5%;
+    font-size:16px;
+    align:center;
+    border-radius:20px 20px 20px 20px;
+    
+}
+.order:hover{
+    background-color: #0a8d0a;
 }
