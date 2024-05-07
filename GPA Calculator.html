@@ -2,11 +2,15 @@
 <html>
     <head>
         <title>GPA Calculator</title>
+        	<html lang="en">
+        	    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
 <body>
    <div class="head">  
-     <h2 align="center">CGPA Calculator</h2>
+     <h2 align="center">GPA Calculator<i class="tony"> by Anthony😜</i></h2>
    </div>    
 
       
@@ -246,7 +250,10 @@
     </table>
    
       <button class="btn" onclick="ttl()">Submit</button>
-   <div class="answer"><h2 id="ans" align="right"></h2></div>  
+   <div class="answer"><h2 id="ans" ></h2></div>  
+   <div class="answer"><h2 id="ans1" ></h2></div>  
+   
+   
     </body>
     
     <style>
@@ -298,6 +305,11 @@ td:nth-child(4) {
 
 tr:nth-child(odd) {
   background: rgb(48, 57, 82);
+}
+.tony{
+    margin-top:2.3%;
+    font-size: 13px;
+    
 }
 
 tr:nth-child(even) {
@@ -497,6 +509,7 @@ var CL1 = document.getElementById("creditLoad1");
   var GPA = totalGradePoints/ totalCreditLoad ;
   
   document.getElementById("ans").innerHTML = "Your GPA is " + GPA.toFixed(2) + " 🙂";
+  document.getElementById("ans1").innerHTML = "Hope you like it 😊 "
 }
 
 
