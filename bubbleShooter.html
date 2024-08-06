@@ -1,5 +1,7 @@
-<!-- Created by lolo -->
-
+<!-- Created by lolo -->
+
+
+
 <!--
     NAME : Game Balls
     DATE : December 19, 2021
@@ -10,6 +12,8 @@
     <head>
         <title>Game Balls</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="loader.css">
+        <script src="WatchingEyes.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@600&display=swap" rel="stylesheet">
         <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
@@ -17,9 +21,14 @@
        <link rel="stylesheet" href="bubbleShooter.css">    
     </head>
     <body>
+                    <!-- For the Load Screen-->
+    <div class="loader"></div>       
+
     <script>
-        // Created by lolo
-
+        // Created by lolo
+
+
+
 let c, ctx, W, H
 let gamePlay = true
 let dots = [], booms = [], same = []
