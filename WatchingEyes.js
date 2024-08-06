@@ -1,3 +1,18 @@
+// For Loader
+window.addEventListener("load", () =>{
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitionend", () =>{
+        document.body.removeChild("loader");
+})
+})
+
+
+
+
+
 document.addEventListener('mousemove', (e) => {
     const eyesContainer = document.querySelector('.eyes');
     const eyes = document.querySelectorAll('.eyes > div');
