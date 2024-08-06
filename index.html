@@ -9,6 +9,7 @@
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
     <link rel="stylesheet" href="Contact form to email.css">
     
     <!----===== Boxicons CSS ===== -->
@@ -19,6 +20,10 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
+
+<script src="WatchingEyes.js"></script>
+
+
 <script type="text/javascript">
    (function(){
       emailjs.init("oj8zv_b8kiV_VOy3q");
@@ -139,7 +144,8 @@
     <!-- welcome panel -->
    <h1  align="center"  style=" font-size:22px;" id="demo"><h1 id="namex"></h1></h1>
    
-            
+    <!-- For the Load Screen-->
+    <div class="loader"></div>       
         
             <!--Content of the page-->
         <h1></h1><br/>
@@ -187,6 +193,8 @@
 
 
 <script>
+
+
 //For dashboard//
 const body = document.querySelector('body'),
       sidebar = body.querySelector('nav'),
@@ -273,7 +281,6 @@ const body = document.querySelector('body'),
     
 
 </script>
-<script src="WatchingEyes.js"></script>
 
 </body>
 </html>
