@@ -19,9 +19,9 @@
 
 .loader::after{
     content:"";
-    width: 75px;
-    height:75px;
-    border: 15px solid #dddddd;
+    width: 45px;
+    height:50px;
+    border: 10px solid #dddddd;
     border-top-color: #00cc00;
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
