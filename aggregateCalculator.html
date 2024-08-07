@@ -71,7 +71,7 @@ colr{
 button{
     background-color:#00ff00;
     color:#ff0000;
-    position:absolute ;
+    position:relative ;
     left:30%;
     height:6%;
     width:33%;
@@ -81,8 +81,7 @@ button{
     
 }
 .answer{
-    position:fixed ;
-    top:50%;
+    position:relative ;
     left:15%;
     color:#fff;
     animation:hideanimation 5s forwards;
@@ -92,8 +91,7 @@ button{
   100%{opacity:0;}
 }
 .a{ 
-	position:fixed;
-    top:60%;
+	position: relative;
 	height:40px;
 	width:48%;
 	padding-left:20px;
@@ -169,9 +167,10 @@ button{
      <label for="n">No</label>      
     <input type="radio" id="n" name="option" value="0"> <br />
       
- </form>
-      <button onclick="ttl()">Submit</button>
+    </form>
    <div class="answer"><h2 id="ans" align="left"></h2></div>  <br/>
+  
+  <button onclick="ttl()">Submit</button><br/><br/>
   <div class="a">
     <a href="index.html" style="text-decoration:none;"><h3>Back to homepage</h3></a>
   </div>
