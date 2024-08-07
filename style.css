@@ -3,11 +3,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-size:16px;
-    width: 95%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:15px;
+    width: 100%;
     
 }
+.icon{
+    font-size: 20px;
+}
+.icons{
+    height: 24px;
+    width: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin: 20px 0 20px 0;
+    padding: 40px 20px;
+    border: 2px solid #aca;
+    box-shadow: 0 0 10px rgba(6, 107, 6, 0.3);
+}
+.flex-container img{
+    margin-right: 15px;
+    width: 150px;
+}
+.flex-container p{
+    text-align: center;
+}
+
 .gimg{
     position: relative;
     left: 30%;
@@ -21,8 +51,9 @@
 .indeximg{
 	border: solid 2px #00aa00;
 	border-radius:2%;
-	height:100%;
-	width:100%;
+	height:110px;
+    min-width:250px;
+    box-shadow:0 8px 16px rgba(0,0,0,0.7);
 	}
 	
 :root{
@@ -69,7 +100,7 @@ body.dark{
 }
 
 /* ===== Sidebar ===== */
- .sidebar{
+ .sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -192,7 +223,7 @@ body.dark .sidebar header .toggle{
     margin-top: 40px;
 }
 
-.sidebar li.search-box{
+.sidebar li.search-box .icons{
     border-radius: 6px;
     background-color: var(--primary-color-light);
     cursor: pointer;
@@ -322,22 +353,18 @@ body.dark .switch::before{
     padding: 20px 15px;
 
 }
-.homet{
-   
-}
+
 .sidebar.close ~ .home{
     left: 90px;
     height: 100%;
-    width:;
+    width:100%;
 }
 body.dark .home .text{
     color: var(--text-color);
 }
-.page{
 
-}
 #web{
-    position:;
+    position:relative;
     display:flex;
     top:0px;
     left:0px;
@@ -357,11 +384,80 @@ body.dark .home .text{
     padding: 0 1% 0 1%;
     margin-left:5px;
     color:#00cc00;
-    background-color:#red;
     }
 .p{
         margin-left:15px;
     }
+
+.form-container{
+    background-color: #ffffff;
+    color: #00aa00;
+    padding:20px 30px 30px 30px;
+    border-radius: 10px 0 10px 0;
+    box-shadow:0 8px 16px rgba(0,0,0,0.4);
+    width:300px;
+    text-align:center;  
+    margin: 0 auto; 
+
+}
+.input-group{
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.input-group input{
+    width: 100%;
+    padding:10px;
+    border:2px solid #ddd;
+    border-radius: 7px 0 7px 0;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}    
+.input-group input:focus{
+    border-color: #00aa00;
+    outline: none;
+}
+.input-group label{
+    position: absolute;
+    top: 10px;
+    left:10px;
+    opacity: 0;
+    color: none;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.2s;
+}
+.input-group input:focus + label, .input-group input:not(:placeholder-shown) + label {
+    top: -15px;
+    left: 5px;
+    font-size: 14px;
+    color: #000000;
+    opacity: 1;
+    background-color: none;
+}
+.sub{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #00aa00;
+    color: #ffffff;
+    border: none;
+    font-size: 17px;
+    transition: background-color 0.3s, transform 0.1s;
+    cursor:pointer;
+    border-radius: 10px 0 10px 0;
+}
+.sub:hover{
+    background-color: #0a8d0a;
+    box-shadow:2px 2px #ddd;
+    transform: translateY(2px);
+}
+.sub:active{
+    background-color: #0000ff;
+    box-shadow: 2px 2px #ddd;
+}
+.sub:focus{
+    outline:none;
+}
 .order{
     position:relative;
     left:25%;
@@ -372,12 +468,21 @@ body.dark .home .text{
     padding:2.5%;
     font-size:16px;
     align:center;
+    cursor: pointer;
     border-radius:20px 20px 20px 20px;
     
 }
 .order:hover{
     background-color: #0a8d0a;
+    box-shadow:0 2px #ddd;
+    transform: translateY(2px);
 }
+.order:active{
+    background-color: #0000ff;
+    box-shadow: 2px 2px #ddd;
+}
+
+
 @property --eyelid {
     syntax: "<percentage>";
     inherits: false;

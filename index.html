@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="loader.css">
     <link rel="stylesheet" href="Contact form to email.css">
@@ -48,14 +51,14 @@
             <div class="menu">
 
                 <li class="search-box">
-                    <i class='bx bx-search icon'></i>
+                    <img src="search.png" alt="search" class="icons"/>
                     <input type="text" placeholder="Search...">
                 </li>
 
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="index.html">
-                            <i class='bx bx-home-alt icon' ></i>
+                            <img src="homepage.png" alt="homepage" class="icons"/>
                             <span class="text nav-text">Homepage</span>
                         </a>
                     </li>
@@ -82,7 +85,7 @@
                     </li>
                     <li class="nav-link">
                         <a href="GPA Calculator.html">
-                            <i class='bx bx-calculator icon' ></i>
+                            <img src="calculator.png" alt="calculator" class="icons"/>
                             <span class="text nav-text">GPA Calculator</span>
                         </a>
                     </li>
@@ -149,31 +152,46 @@
         
             <!--Content of the page-->
         <h1></h1><br/>
-      <p><b class="p"></b><b>Ebuz Animations</b> is a fantastic website that specializes in creating eye-catching 3D character and product animations for advertisements.</p><br/>
-      
+    <div class="flex-container">
+        <div class="flex-text">
+            <p><b class="p"></b><b>Ebuz Animations</b> is a fantastic website that specializes in creating eye-catching 3D character and product animations for advertisements.</p><br/>
+        </div>
        <img src="Sample4.jpg" alt="3d" class="indeximg"><br/><br/>
-             
-      <p><b class="p"></b>They also offer services like designing custom-made websites and even developing online games. It's a one-stop-shop for all things 3D and animation.</p><br/>
-        <img src="Goldcar.png" alt="3d" class="indeximg"><br/><br/>
-
-        <p><b class="p">Ebuz Animations</b> is your go-to destination for mind-blowing 3D character and product animations. They've got you covered when it comes to creating stunning visuals for advertisements, websites, and even online games. Their expertise in 3D modeling will surely bring your ideas to life in the most captivating way possible. Get ready to be amazed by their talent and creativity! 🎬✨</p><br/><br/>
-        
+         
+       <div class="flex-text">
+            <p><b class="p"></b>They also offer services like designing custom-made websites and even developing online games. It's a one-stop-shop for all things 3D and animation.</p><br/>
+        </div>
+            <img src="Goldcar.png" alt="3d" class="indeximg"><br/><br/>
+        <div class="flex-text">
+            <p><b class="p">Ebuz Animations</b> is your go-to destination for mind-blowing 3D character and product animations. They've got you covered when it comes to creating stunning visuals for advertisements, websites, and even online games. Their expertise in 3D modeling will surely bring your ideas to life in the most captivating way possible. Get ready to be amazed by their talent and creativity! 🎬✨</p><br/><br/>
+        </div>
          <img src="Sample3.jpg" alt="3d" class="indeximg"><br/><br/>
-       <p><b class="p"></b>Click the button below to make your order, thanks for patronizing 🤗.</p>
-       <div class="order" align="center" ><b><a href="https://wa.me/+2349169506295?text=Good%20day,%20i'd%20like%20to%20make%20an%20order." style="color:white; text-decoration:none;">Make an Order</a></b></div><br/>
+    </div>
+    <div class="flex-container">
+       <p><b class="p"></b>Click the button below to make your order, thanks for patronizing 🤗.</p><br/>
+       <a href="https://wa.me/+2349169506295?text=Good%20day,%20i'd%20like%20to%20make%20an%20order." style="color:white; text-decoration:none;"><div class="order" align="center" ><b>Make an Order</b></div></a><br/>
 <section> 
     <p><b class="p"></b>Your order will be sent to you via email when completed, pls input your Name and Email below. </p><br/>
- <form id="form">
-  <label for="name">Name:</label>
-  <input  class="form" type="text" id="name" name="name" autocomplete="given-name" placeholder="Input your name" required><br/><br/>
-  <label for="email">Email:</label>
-  <input class="form" type="email" id="email" name="email" autocomplete="given-name" placeholder="email" required><br/><br/>
+ <div class="form-container"> <h1><b>Form</b></h1>
+    <form id="form">
+        <div class="input-group">
+            <input  class="form" type="text" id="name" name="name" autocomplete="given-name" placeholder="Input your name" required>
+            <label for="name">Name</label>
+        </div>
+        <div class="input-group">
+            <input class="form" type="email" id="email" name="email" autocomplete="given-name" placeholder="email" required>
+            <label for="email">Email</label>
+        </div>
 
-  <button type="submit" class="button" onclick="sendMail()" >Submit</button>
- </form><br/>
+            <button type="submit" class="sub" onclick="sendMail()" >Submit</button>
+    </form>
+    </div><br/>
        <p>You can also check out other features of the site, like our Jamb aggregate calculator, games and other stuff 😊.</p> 
   <br/><br/><br/><br/><br/>
  </section>
+</div>
+
+<div class="flex-container">
  <footer> 
    
     <div style="text-align: center;">Contact us through the following links.</div><br />
@@ -187,6 +205,7 @@
   <a href="https://www.facebook.com/profile.php?id=100082984046129" class="nav">Instagram</a>
     </nav>
  </footer>
+</div>
  
  </div>       
 </div>
