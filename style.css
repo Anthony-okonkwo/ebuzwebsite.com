@@ -60,7 +60,7 @@
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #695CFE;
+    --primary-color: #008800;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #000000;
@@ -90,14 +90,7 @@ body{
     color: #fff;
 }
 
-body.dark{
-    --body-color: #18191a;
-    --sidebar-color: #242526;
-    --primary-color: #3a3b3c;
-    --primary-color-light: #3a3b3c;
-    --toggle-color: #fff;
-    --text-color: #ccc;
-}
+
 
 /* ===== Sidebar ===== */
  .sidebar {
@@ -291,6 +284,7 @@ body.dark .sidebar li a:hover .text{
 
 .mode .sun-moon i{
     position: absolute;
+    left: 15px;
 }
 .mode .sun-moon i.sun{
     opacity: 0;
@@ -318,7 +312,7 @@ body.dark .mode .sun-moon i.moon{
     position: relative;
     height: 22px;
     width: 40px;
-    left: 40%;
+    left: 80%;
     border-radius: 25px;
     background-color: var(--toggle-color);
     transition: var(--tran-05);
@@ -395,11 +389,12 @@ body.dark .home .text{
     padding:20px 30px 30px 30px;
     border-radius: 10px 0 10px 0;
     box-shadow:0 8px 16px rgba(0,0,0,0.4);
-    width:60%;
+    width:85%;
     text-align:center;  
     margin: 0 auto; 
 
 }
+
 .formNameStyle{
     font-size: 25px;
     font-weight: bold;
@@ -407,11 +402,11 @@ body.dark .home .text{
 }
 .input-group{
     position:relative;
-    margin: 25px 0 25px 0;
+    margin: 18px 0 18px 0;
 }
 .input-group input{
     width: 100%;
-    padding:10px;
+    padding:6px;
     border:2px solid #ddd;
     border-radius: 7px 0 7px 0;
     font-size: 16px;
@@ -453,12 +448,11 @@ body.dark .home .text{
 }
 .sub:hover{
     background-color: #0a8d0a;
-    box-shadow:2px 2px #ddd;
+    box-shadow: 0 5px 5px rgba(116, 145, 116, 0.3);
     transform: translateY(2px);
 }
 .sub:active{
     background-color: #0000ff;
-    box-shadow: 2px 2px #ddd;
 }
 .sub:focus{
     outline:none;
@@ -566,3 +560,47 @@ body.dark .home .text{
     }
     
 }
+/*Dark Mode*/
+body.dark{
+    --body-color: #222;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+}
+body.dark .form-container{
+    background-color: #080;
+    color: #fff;
+    box-shadow:0 15px 15px rgba(100,100,100,0.4); 
+}
+body.dark .flex-container{
+    border: none;
+    box-shadow: 0 15px 15px rgba(215, 230, 215, 0.3);
+}
+.indeximg{
+	    box-shadow:0 16px 16px rgba(210, 218, 213, 0.3);
+	}
+body.dark .sub{
+        background-color: #161;
+        color: #ffffff;
+        border: none;
+        font-size: 17px;
+        transition: background-color 0.3s, transform 0.1s;
+        cursor:pointer;
+        border-radius: 10px 0 10px 0;
+    }
+    body.dark .sub:hover{
+        background-color: #072207;
+        box-shadow: 0 5px 5px rgba(211, 223, 211, 0.3);
+        transform: translateY(2px);
+    }
+    body.dark .order{
+        box-shadow: 0 5px 5px rgba(215, 230, 215, 0.2);
+    }
+    body.dark .order:hover{
+        background-color: #0a8d0a;
+        box-shadow:0 2px 2px rgba(174, 194, 174, 0.3);
+        transform: translateY(2px);
+    }
+    
