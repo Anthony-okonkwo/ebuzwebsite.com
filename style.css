@@ -374,6 +374,14 @@ body.dark .home .text{
     padding-left:20px;
 
 }
+nav{
+    background-color: #ffffff1a;
+    border-radius: 5px;
+    padding: 2%;
+    border: 1px solid #ffffff20;
+    box-shadow:0 8px 16px rgba(0,0,0,0.4);
+    backdrop-filter: blur(16px) saturate(120%);
+    }
 .nav{
     padding: 0 1% 0 1%;
     margin-left:5px;
@@ -409,7 +417,9 @@ body.dark .home .text{
     padding:6px;
     border:2px solid #ddd;
     border-radius: 7px 0 7px 0;
+    outline: none;
     font-size: 16px;
+    background-color: transparent;
     transition: border-color 0.3s;
 }    
 .input-group input:focus{
@@ -418,20 +428,23 @@ body.dark .home .text{
 }
 .input-group label{
     position: absolute;
-    top: 10px;
-    left:10px;
-    opacity: 0;
-    color: none;
-    font-size: 10px;
+    width: auto;
+    top: 50%;
+    left:0px;
+    color: #999;
+    font-size: 16px;
     pointer-events: none;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+    transform: translateY(-50%);
+    background: none;
+    padding: 0 5px;
 }
 .input-group input:focus + label, .input-group input:not(:placeholder-shown) + label {
-    top: -15px;
+    top: -10px;
     left: 5px;
     font-size: 12px;
     font-weight: bold;
-    color: #000000;
+    color: #00aa00;
     opacity: 1;
     background-color: none;
 }
@@ -603,4 +616,7 @@ body.dark .sub{
         box-shadow:0 2px 2px rgba(174, 194, 174, 0.1);
         transform: translateY(2px);
     }
-    
+    body.dark nav{
+    box-shadow: 0 5px 5px rgba(215, 230, 215, 0.2);
+        backdrop-filter: blur(16px) saturate(120%);
+        }
