@@ -58,12 +58,12 @@
 	
 :root{
     /* ===== Colors ===== */
-    --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
+    --body-color: #f2fdf2;
+    --sidebar-color: #efefef;
     --primary-color: #008800;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
-    --text-color: #000000;
+    --text-color: #031703;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -115,6 +115,7 @@ body{
     display: flex;
     align-items: center;
     margin-top: 10px;
+    justify-content: space-between;
 }
 
 .sidebar header .image,
@@ -140,9 +141,12 @@ body{
 }
 
 .sidebar .text{
-    font-size: 17px;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 16px;
     font-weight: 500;
-    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     opacity: 1;
 }
 .sidebar.close .text{
@@ -159,13 +163,11 @@ body{
     align-items: center;
 }
 .sidebar header .logo-text{
-    display: flex;
-    flex-direction: column;
-}
-header .image-text .name {
-    margin-top: 2px;
-    font-size: 18px;
-    font-weight: 600;
+    position: relative;
+    margin: 10px 0 10px 0;
+    }
+.sidebar.close .logo-text{
+    display: none;
 }
 
 header .image-text .profession{
@@ -213,7 +215,7 @@ body.dark .sidebar header .toggle{
 }
 
 .sidebar .menu{
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .sidebar li.search-box .icons{
@@ -227,6 +229,7 @@ body.dark .sidebar header .toggle{
     height: 100%;
     width: 100%;
     outline: none;
+    padding-left: 5px;
     border: none;
     background-color: var(--primary-color-light);
     color: var(--text-color);
@@ -271,20 +274,30 @@ body.dark .sidebar li a:hover .text{
     display: none;
 }
 .sidebar .menu-bar .mode{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    position: relative;
-    transition: var(--tran-05);
-}
+        display: flex;
+        align-items: center;  /* Align icon, text, and switch in the center */
+        justify-content: space-between;  /* Evenly space between text and switch */
+        background-color: var(--primary-color-light);
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: var(--tran-05);
+    }
 
 .menu-bar .mode .sun-moon{
-    height: 50px;
-    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 30px;  /* Fixed width for the icon */
+    height: 30px;
+    margin-right: 10px;
 }
 
 .mode .sun-moon i{
     position: absolute;
-    left: 15px;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
 }
 .mode .sun-moon i.sun{
     opacity: 0;
@@ -295,29 +308,40 @@ body.dark .mode .sun-moon i.sun{
 body.dark .mode .sun-moon i.moon{
     opacity: 0;
 }
+.mode .text {
+     width: 100px; /* Set a fixed width for consistent alignment */
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 10px;
+    text-align: left; /* Align text to the left */
+    overflow: hidden; /* Hide overflow if necessary */
+    white-space: nowrap; /* Prevent text wrapping */
+}
 
-.menu-bar .bottom-content .toggle-switch{
-    position: absolute;
-    right: 0;
-    height: 100%;
-    min-width: 60px;
-    left: 0px;
+.menu-bar .mode .toggle-switch{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
+    min-width: 60px;
+    height: 100%;
     cursor: pointer;
+    border-radius: 6px;
+    transition: var(--tran-05);
 }
 .toggle-switch .switch{
-    position: relative;
-    height: 22px;
     width: 40px;
-    left: 80%;
-    border-radius: 25px;
+    height: 20px;
     background-color: var(--toggle-color);
+    border-radius: 25px;
+    position: relative;
     transition: var(--tran-05);
 }
 
+body.dark .toggle-switch .switch {
+    left: 19px;  /* Move the switch to the right when in dark mode */
+}
 .switch::before{
     content: '';
     position: absolute;
@@ -352,6 +376,9 @@ body.dark .switch::before{
     left: 90px;
     height: 100%;
     width:100%;
+}
+.sidebar.close .toggle-switch {
+    display: none; /* Hide the toggle button */
 }
 body.dark .home .text{
     color: var(--text-color);
@@ -392,10 +419,10 @@ nav{
     }
 
 .form-container{
-    background-color: #ffffff;
-    color: #00aa00;
+    background-color: #e6f7e6;
+    color: #097b09;
     padding:20px 30px 30px 30px;
-    border-radius: 10px 0 10px 0;
+    border-radius: 30px 3px 30px 3px;
     box-shadow:0 8px 16px rgba(0,0,0,0.4);
     width:85%;
     text-align:center;  
@@ -415,7 +442,7 @@ nav{
 .input-group input{
     width: 100%;
     padding:6px;
-    border:2px solid #ddd;
+    border:2px solid #cdc;
     border-radius: 7px 0 7px 0;
     outline: none;
     font-size: 16px;
@@ -451,7 +478,7 @@ nav{
 .sub{
     padding: 10px 20px;
     margin: 10px;
-    background-color: #00aa00;
+    background-color: #097b09;
     color: #ffffff;
     border: none;
     font-size: 17px;
@@ -479,9 +506,8 @@ nav{
     width:50%;
     padding:2.5%;
     font-size:16px;
-    align:center;
     cursor: pointer;
-    border-radius:20px 20px 20px 20px;
+    border-radius:20px;
     
 }
 .order:hover{
